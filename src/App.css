@@ -40,3 +40,17 @@
 .read-the-docs {
   color: #888;
 }
+
+@media (min-width: 768px) {
+  /* Styles for screens larger than 768px */
+}
+
+/* #ECF4D6
+#9AD0C2
+#2D9596
+#265073
+
+rgb(236, 244, 214) 
+rgb(154, 208, 194)
+rgb(45, 149, 150)
+rgb(38, 80, 115) */
