@@ -4,6 +4,8 @@ import './App.css'
 import HomePage from './pages/HomePage';
 import ProjectsPage from './pages/ProjectsPage';
 import ContactPage from './pages/ContactPage';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 function App() {
 

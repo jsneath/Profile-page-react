@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 
 function NavBar() {
     return (
-        <nav className="navbar bg-body-tertiary fixed-top">
+<nav className="navbar bg-body-tertiary fixed-top">
   <div className="container-fluid">
     <a className="navbar-brand" href="#">James Sneath Profile</a>
     <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
@@ -28,7 +28,6 @@ function NavBar() {
           </li>
           <li className="nav-item">
           <Link to="/contact" className="nav-link">Contact me</Link>
-
           </li>
 
         </ul>
@@ -36,7 +35,21 @@ function NavBar() {
     </div>
   </div>
 </nav>
+
     );
 }
 
+
+function Jumbotron() {
+  return (
+    <div className="jumbotron jumbotron-fluid">
+    <div className="container">
+    <h1 className="display-4">James Sneath</h1>
+    <p className="lead">Welcome, to my personal portfolio website where i show off my latest projects</p>
+  </div>
+</div>
+  )
+}
+
 export default NavBar
+export { Jumbotron };

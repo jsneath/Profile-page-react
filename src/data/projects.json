@@ -1,0 +1,55 @@
+
+[
+    {
+      "id": 1,
+      "title": "Foodie-Mate",
+      "description": "App for finding local restaurants",
+      "image": "/project1.jpg",
+      "link": "https://bakomans.github.io/restaurant-explorer-By-Group-8/",
+      "github": "https://github.com/bakomans/restaurant-explorer-By-Group-8"
+    },
+    {
+    "id": 2,
+    "title": "Weather Dashboard",
+    "description": "Providing the user with current and future weather forecasts",
+    "image": "/project2.png",
+    "link": "https://jsneath.github.io/Weather-dashboard/",
+    "github": "https://github.com/jsneath/Weather-dashboard"
+    },
+     {
+    "id": 3,
+    "title": "Project Two",
+    "description": "Description of Project Two",
+    "image": "/project2.png",
+    "link": "http://chelseafc.com",
+    "github": "http://linkedin.com"
+    },
+    {
+    "id": 4,
+    "title": "Project Two",
+    "description": "Description of Project Two",
+    "image": "/project2.png",
+    "link": "http://chelseafc.com",
+    "github": "http://linkedin.com"
+    },
+
+    {
+    "id": 5,
+    "title": "Project Two",
+    "description": "Description of Project Two",
+    "image": "/project2.png",
+    "link": "http://chelseafc.com",
+    "github": "http://linkedin.com"
+    },
+
+    {
+    "id": 6,
+    "title": "Project Two",
+    "description": "Description of Project Two",
+    "image": "/project2.png",
+    "link": "http://chelseafc.com",
+    "github": "http://linkedin.com"
+    }
+
+    
+]
