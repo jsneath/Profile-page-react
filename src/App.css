@@ -5,6 +5,18 @@
   text-align: center;
 }
 
+html {
+
+  overflow: -moz-scrollbars-vertical;
+  overflow-y: scroll;
+}
+
+.container {
+  max-width: 375px;
+  margin: 0 auto;
+  padding: 15px 15px;
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -41,9 +53,7 @@
   color: #888;
 }
 
-@media (min-width: 768px) {
-  /* Styles for screens larger than 768px */
-}
+
 /* Homepage styling------------------ */
 
 .profile-image {
@@ -53,6 +63,31 @@
   border: 2px solid #000; /* Example border */
   /* Add other styles as needed */
 }
+
+
+/* Portfolio page styling----------------------------------- */
+
+#project-images {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+
+
+
+/* @media (min-width: 768px) {
+  /* Styles for screens larger than 768px */
+
+
+/* 
+  @media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+
+} */
 
 /* #ECF4D6
 #9AD0C2

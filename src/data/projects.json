@@ -18,37 +18,35 @@
     },
      {
     "id": 3,
-    "title": "Project Two",
-    "description": "Description of Project Two",
-    "image": "/project2.png",
-    "link": "http://chelseafc.com",
-    "github": "http://linkedin.com"
+    "title": "Work-day-Scheduler",
+    "description": "To help the user efficiently organize and plan their workday",
+    "image": "/project3.png",
+    "link": "https://jsneath.github.io/Work-Day-Scheduler/",
+    "github": "https://github.com/jsneath/Work-Day-Scheduler"
     },
     {
     "id": 4,
-    "title": "Project Two",
-    "description": "Description of Project Two",
-    "image": "/project2.png",
-    "link": "http://chelseafc.com",
-    "github": "http://linkedin.com"
+    "title": "Quiz game",
+    "description": "A quick fun easy quiz game",
+    "image": "/project4.png",
+    "link": "https://jsneath.github.io/code-quiz/",
+    "github": "https://github.com/jsneath/code-quiz"
     },
 
     {
     "id": 5,
-    "title": "Project Two",
-    "description": "Description of Project Two",
-    "image": "/project2.png",
-    "link": "http://chelseafc.com",
-    "github": "http://linkedin.com"
+    "title": "Early portfolio builder",
+    "description": "An early portfolio version playing with new tools",
+    "image": "/project5.png",
+    "link": "https://jsneath.github.io/Bootstrap-Portfolio/",
+    "github": "https://github.com/jsneath/Bootstrap-Portfolio"
     },
 
     {
     "id": 6,
-    "title": "Project Two",
-    "description": "Description of Project Two",
-    "image": "/project2.png",
-    "link": "http://chelseafc.com",
-    "github": "http://linkedin.com"
+    "title": "Project under construction",
+    "description": "Latest project coming soon!",
+    "image": "/tbc.jpg"
     }
 
     
