@@ -16,10 +16,10 @@ This portfolio is crafted with a mobile-first approach, ensuring a seamless and 
 
 ## Quick Links
 
-- **Live Portfolio:** [https://jsneath.github.io/Bootstrap-Portfolio/](https://jsneath.github.io/Bootstrap-Portfolio/)
-- **GitHub Repository:** [https://github.com/jsneath/Bootstrap-Portfolio](https://github.com/jsneath/Profile-page-react)
+- **GitHub Repository:** [https://jsneath.github.io/Bootstrap-Portfolio/](https://jsneath.github.io/Bootstrap-Portfolio/)
+- **Live Portfolio:** [https://react-portfolio-jsneath.netlify.app/](https://react-portfolio-jsneath.netlify.app/)
 
-![Web portfolio with bootstrap](Screenshot.png)
+![Web portfolio with bootstrap](./src/assets/screenshot1.png)
 
 ## Future Enhancements
 
