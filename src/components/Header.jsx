@@ -2,7 +2,7 @@ import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Link } from 'react-router-dom';
 import myImage from '../assets/-1tgddd.jpg';
-import '../app.css'
+import '../App.css'
 
 
 
