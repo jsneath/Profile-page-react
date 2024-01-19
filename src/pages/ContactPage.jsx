@@ -3,11 +3,21 @@ import NavBar from '../components/header'; // Adjust the path according to your 
 // import './HomePage.css'; // If you have a specific CSS file for the HomePage
 
 function ContactPage() {
+    
+
     return (
-        <div className="contactPage">
-            <NavBar /> 
+        <>
+        <NavBar />
         
+        <div className="contact-info">
+            <h2>Contact Information</h2>
+            <p>Email: <a href="mailto:your-email@example.com">jamessneath1@gmail.com</a></p>
+            <p>CV: <a href="../public/james-sneath.pdf" target="_blank" rel="noopener noreferrer">Download CV</a></p>
+            <p>GitHub: <a href="https://github.com/jsneath" target="_blank" rel="noopener noreferrer">github.com/jsneath</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/james-sneath" target="_blank" rel="noopener noreferrer">linkedin.com/in/james-sneath</a></p>
         </div>
+        </>
+   
     );
 }
 

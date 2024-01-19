@@ -1,7 +1,8 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Link } from 'react-router-dom';
-
+import myImage from '../assets/-1tgddd.jpg';
+import '../app.css'
 
 
 
@@ -9,7 +10,7 @@ function NavBar() {
     return (
 <nav className="navbar bg-body-tertiary fixed-top">
   <div className="container-fluid">
-    <a className="navbar-brand" href="#">James Sneath Profile</a>
+    <a className="navbar-brand" href="#">My Profile</a>
     <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
@@ -42,10 +43,11 @@ function NavBar() {
 
 function Jumbotron() {
   return (
-    <div className="jumbotron jumbotron-fluid">
-    <div className="container">
+    <div className="jumbotron jumbotron-fluid my-jumbotron-bg">
+    <div className="container-fluid text-on-image">
     <h1 className="display-4">James Sneath</h1>
     <p className="lead">Welcome, to my personal portfolio website where i show off my latest projects</p>
+    <img src={myImage} alt="A picture of me" className="profile-image" />
   </div>
 </div>
   )
