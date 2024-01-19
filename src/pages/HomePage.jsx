@@ -1,5 +1,5 @@
 import React from 'react';
-import NavBar, { Jumbotron} from '../components/header'; // Adjust the path according to your project structure
+import NavBar, { Jumbotron} from '../components/Header'; // Adjust the path according to your project structure
 
 import '../App.css';
 
