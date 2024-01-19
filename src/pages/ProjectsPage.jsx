@@ -1,5 +1,5 @@
 import React from 'react';
-import NavBar from '../components/header'; // Adjust the path according to your project structure
+import NavBar from '../components/Header'; // Adjust the path according to your project structure
 import Projects from '../components/Project';
 
 function ProjectsPage() {
