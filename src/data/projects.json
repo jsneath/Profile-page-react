@@ -1,53 +1,52 @@
-
 [
-    {
-      "id": 1,
-      "title": "Foodie-Mate",
-      "description": "App for finding local restaurants",
-      "image": "/project1.jpg",
-      "link": "https://bakomans.github.io/restaurant-explorer-By-Group-8/",
-      "github": "https://github.com/bakomans/restaurant-explorer-By-Group-8"
-    },
-    {
+  {
+    "id": 1,
+    "title": "Foodie-Mate",
+    "description": "App for finding local restaurants",
+    "image": "/project1.jpg",
+    "link": "https://bakomans.github.io/restaurant-explorer-By-Group-8/",
+    "github": "https://github.com/bakomans/restaurant-explorer-By-Group-8"
+  },
+  {
     "id": 2,
     "title": "Weather Dashboard",
     "description": "Providing the user with current and future weather forecasts",
     "image": "/project2.png",
     "link": "https://jsneath.github.io/Weather-dashboard/",
     "github": "https://github.com/jsneath/Weather-dashboard"
-    },
-     {
+  },
+  {
     "id": 3,
     "title": "Work-day-Scheduler",
     "description": "To help the user efficiently organize and plan their workday",
     "image": "/project3.png",
     "link": "https://jsneath.github.io/Work-Day-Scheduler/",
     "github": "https://github.com/jsneath/Work-Day-Scheduler"
-    },
-    {
+  },
+  {
     "id": 4,
     "title": "Quiz game",
     "description": "A quick fun easy quiz game",
     "image": "/project4.png",
     "link": "https://jsneath.github.io/code-quiz/",
     "github": "https://github.com/jsneath/code-quiz"
-    },
+  },
 
-    {
+  {
     "id": 5,
     "title": "Early portfolio builder",
     "description": "An early portfolio version playing with new tools",
     "image": "/project5.png",
     "link": "https://jsneath.github.io/Bootstrap-Portfolio/",
     "github": "https://github.com/jsneath/Bootstrap-Portfolio"
-    },
+  },
 
-    {
+  {
     "id": 6,
-    "title": "Project under construction",
-    "description": "Latest project coming soon!",
-    "image": "/tbc.jpg"
-    }
-
-    
+    "title": "Project Management tool",
+    "description": "A tool for keeping your tasks organised and on track",
+    "image": "/project6.png",
+    "link": "https://jsneath.github.io/project-management/",
+    "github": "https://github.com/jsneath/project-management"
+  }
 ]
