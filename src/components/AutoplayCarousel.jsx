@@ -1,5 +1,5 @@
 import React from "react";
-import "../autoplaycarousel.scss";
+import "../AutoplayCarousel.scss";
 import { cardDetails } from "./carousel-config";
 import CarouselItem from "./CarouselItem";
 
