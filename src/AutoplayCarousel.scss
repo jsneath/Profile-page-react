@@ -40,6 +40,9 @@
   }
 }
 
+.my-icon path {
+  fill: blue; /* Change color to blue */
+}
 @keyframes slide {
   0% {
     left: 0;
