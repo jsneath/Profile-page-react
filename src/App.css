@@ -76,13 +76,13 @@ html {
 
 .my-jumbotron-bg {
   position: relative; /* Needed for absolute positioning of the pseudo-element */
-  background-image: url("/coding.jpg"); /* Adjust path as needed */
+  /* background-image: url("/coding.jpg"); Adjust path as needed */
   background-size: cover;
   background-position: center;
   z-index: 1; /* Ensures background is under the content */
 }
 
-.my-jumbotron-bg::before {
+/* .my-jumbotron-bg::before {
   content: "";
   position: absolute;
   top: 0;
@@ -90,8 +90,8 @@ html {
   right: 0;
   bottom: 0;
   background: #2d94967f; /* Example: black tint with 50% opacity */
-  z-index: 2; /* Ensures the overlay is above the background but below the content */
-}
+/* z-index: 2; Ensures the overlay is above the background but below the content */
+/* } */
 
 /* Ensure that content in the jumbotron is positioned above the overlay */
 .my-jumbotron-bg > * {
