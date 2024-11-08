@@ -63,11 +63,11 @@ html {
 }
 
 .home-content {
-  padding: 36px;
+  /* padding: 36px; */
 }
 
 .text-on-image {
-  padding: 30px;
+  /* padding: 30px; */
 }
 
 .homePage {
@@ -76,7 +76,7 @@ html {
 
 .my-jumbotron-bg {
   position: relative; /* Needed for absolute positioning of the pseudo-element */
-  /* background-image: url("/coding.jpg"); Adjust path as needed */
+  background-image: url("/coding.jpg");
   background-size: cover;
   background-position: center;
   z-index: 1; /* Ensures background is under the content */
@@ -100,10 +100,10 @@ html {
 }
 
 .lead {
-  color: #ecf4d6 !important;
+  color: #ffb703 !important;
 }
 .display-4 {
-  color: #ecf4d6;
+  color: #ffb703;
 }
 
 .text-on-image {
@@ -117,7 +117,7 @@ html {
 }
 
 .homePage p {
-  color: #2d9596;
+  color: #fb8500;
 }
 
 /* Portfolio page styling----------------------------------- */
@@ -163,7 +163,7 @@ h4 {
 /* ---------navbar */
 
 .navbar {
-  background-color: #9ad0c2 !important;
+  background-color: transparent !important;
 }
 
 .navbar-brand {
@@ -175,7 +175,7 @@ h4 {
 }
 
 .offcanvas-header {
-  background-color: #9ad0c2 !important;
+  background-color: none !important;
 }
 
 .offcanvas-body {
