@@ -76,7 +76,7 @@ html {
 
 .my-jumbotron-bg {
   position: relative; /* Needed for absolute positioning of the pseudo-element */
-  background-image: url("/coding.jpg");
+  /* background-image: url("/coding.jpg"); */
   background-size: cover;
   background-position: center;
   z-index: 1; /* Ensures background is under the content */
@@ -164,10 +164,11 @@ h4 {
 
 .navbar {
   background-color: transparent !important;
+  color: white;
 }
 
 .navbar-brand {
-  color: #265073;
+  color: white;
 }
 
 .navbar-toggler {

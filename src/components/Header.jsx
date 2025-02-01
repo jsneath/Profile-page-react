@@ -100,11 +100,9 @@ function Jumbotron() {
   return (
     <div className="jumbotron jumbotron-fluid my-jumbotron-bg">
       <div className="container-fluid text-on-image">
-        <h1 className="display-4">James Sneath</h1>
-        <p className="lead">
-          Welcome, to my personal portfolio website where i show off my latest
-          projects
-        </p>
+        <h1 className="display-4">{"<Hi, I'm James!>"}</h1>
+        <p className="lead">{"<I build websites, based in London, UK>"}</p>
+        {/* <p className="lead">{"<London>"}</p> */}
         <img src={myImage} alt="A picture of me" className="profile-image" />
       </div>
     </div>
