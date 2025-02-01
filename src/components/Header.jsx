@@ -99,11 +99,31 @@ function NavBar() {
 function Jumbotron() {
   return (
     <div className="jumbotron jumbotron-fluid my-jumbotron-bg">
-      <div className="container-fluid text-on-image">
-        <h1 className="display-4">{"<Hi, I'm James!>"}</h1>
-        <p className="lead">{"<I build websites, based in London, UK>"}</p>
-        {/* <p className="lead">{"<London>"}</p> */}
-        <img src={myImage} alt="A picture of me" className="profile-image" />
+      <div className="container-fluid">
+        <div className="row align-items-center">
+          {/* Image on the left */}
+          <div className="col-md-6">
+            <img
+              src={myImage}
+              alt="A picture of me"
+              className="profile-image img-fluid"
+            />
+          </div>
+          {/* Text on the right */}
+          <div className="col-md-6 display-4">
+            <ul>
+              <li>
+                <p>{"<Hi, I'm James!>"}</p>
+              </li>
+              <li>
+                <p>{"<I'm a Front-End Web Developer>"}</p>
+              </li>
+              {/* <li>
+                <p>{"<London, UK>"}</p>
+              </li> */}
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   );
