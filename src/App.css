@@ -61,14 +61,6 @@ html {
   /* Add other styles as needed */
 }
 
-.home-content {
-  /* padding: 36px; */
-}
-
-.text-on-image {
-  /* padding: 30px; */
-}
-
 .homePage {
   margin-top: 30px;
 }
@@ -81,16 +73,32 @@ html {
   z-index: 1; /* Ensures background is under the content */
 }
 
-/* .my-jumbotron-bg::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: #2d94967f; /* Example: black tint with 50% opacity */
-/* z-index: 2; Ensures the overlay is above the background but below the content */
-/* } */
+.cta-buttons {
+  display: flex;
+  gap: 1rem; /* space between buttons */
+  justify-content: center;
+  margin-top: 2rem; /* spacing from other elements */
+}
+
+.cta-buttons button {
+  font-size: 1rem;
+  padding: 0.75rem 1.5rem;
+  border: 2px solid #fff; /* white border */
+  background-color: transparent; /* transparent background by default */
+  color: #fff; /* white text */
+  border-radius: 25px; /* rounded corners */
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease,
+    box-shadow 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* subtle shadow */
+}
+
+.cta-buttons button:hover {
+  background-color: #fff; /* white background on hover */
+  color: #333; /* dark text on hover for contrast */
+  transform: scale(1.05); /* slight scale effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* more pronounced shadow */
+}
 
 /* Ensure that content in the jumbotron is positioned above the overlay */
 .my-jumbotron-bg > * {
@@ -103,6 +111,15 @@ html {
 }
 .display-4 {
   color: #ffb703;
+  font-size: 38px;
+}
+
+ol li::marker {
+  font-size: 20px;
+}
+
+.description {
+  font-size: 20px;
 }
 
 .text-on-image {

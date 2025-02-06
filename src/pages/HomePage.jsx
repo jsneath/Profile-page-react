@@ -8,23 +8,17 @@ function HomePage() {
     <div className="homePage">
       <NavBar />
       <Jumbotron />
+      <br />
       <AutoplayCarousel />
-      <div className="home-content">
-        <p className="location">Front-End Web Developer</p>
-        <p className="location">📍 London, UK</p>
+      {/* <div className="home-content">
         <p className="description">
-          As an aspiring Front End Web Developer with a keen interest in React,
-          I am passionate about creating interactive and user-friendly web
-          applications. With foundational skills in HTML, CSS, JavaScript, and a
-          growing expertise in React, I am enthusiastic about building
-          responsive interfaces that enhance user experiences. I am eager to
-          apply my knowledge and adapt quickly in a dynamic team environment,
-          contributing to impactful projects while continuously advancing my
-          skills. My goal is to join an organization where innovation and
-          continuous learning are valued, allowing me to grow as a professional
-          in the exciting field of web development.
+          I'm a passionate Front-End Developer focused on React, building
+          interactive, user-friendly web apps with HTML, CSS, and JavaScript. I
+          create responsive interfaces that enhance user experiences and thrive
+          in dynamic, innovative teams where I can continuously learn and
+          contribute.
         </p>
-      </div>
+      </div> */}
     </div>
   );
 }

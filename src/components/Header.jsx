@@ -108,20 +108,38 @@ function Jumbotron() {
               alt="A picture of me"
               className="profile-image img-fluid"
             />
+            <div className="cta-buttons">
+              <button onClick={() => (window.location.href = "#projects")}>
+                View My Work
+              </button>
+              <button onClick={() => (window.location.href = "#contact")}>
+                Let's Connect
+              </button>
+            </div>
           </div>
           {/* Text on the right */}
           <div className="col-md-6 display-4">
-            <ul>
+            <ol>
               <li>
                 <p>{"<Hi, I'm James!>"}</p>
               </li>
               <li>
                 <p>{"<I'm a Front-End Web Developer>"}</p>
               </li>
-              {/* <li>
-                <p>{"<London, UK>"}</p>
-              </li> */}
-            </ul>
+              <li>
+                <p>{"<Open for work in London, UK 📍>"}</p>
+              </li>
+            </ol>
+
+            <div className="home-content">
+              <p className="description">
+                I'm a passionate Front-End Developer focused on React, building
+                interactive, user-friendly web apps with HTML, CSS, and
+                JavaScript. I create responsive interfaces that enhance user
+                experiences and thrive in dynamic, innovative teams where I can
+                continuously learn and contribute.
+              </p>
+            </div>
           </div>
         </div>
       </div>
