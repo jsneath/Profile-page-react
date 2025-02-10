@@ -3,12 +3,13 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Link } from "react-router-dom";
 import myImage from "/assets/-1tgddd.jpg";
 import "../App.css";
+import logo from "/assets/jslogo2.png";
 
 function NavBar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <a className="navbar-brand" href="#">
-        My Projects
+        <img src={logo} alt="My Logo" width="150" height="150" />
       </a>
       <button
         className="navbar-toggler"
