@@ -22,7 +22,10 @@ function NavBar() {
       >
         <span className="navbar-toggler-icon"></span>
       </button>
-      <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div
+        className="collapse navbar-collapse justify-content-end"
+        id="navbarNavAltMarkup"
+      >
         <div className="navbar-nav">
           <Link to="/" className="nav-item nav-link">
             Home
@@ -38,6 +41,7 @@ function NavBar() {
     </nav>
   );
 }
+
 // function NavBar() {
 //   return (
 //     <nav className="navbar bg-body-tertiary fixed-top">
