@@ -1,4 +1,5 @@
 import React from "react";
+import { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Link } from "react-router-dom";
 import myImage from "/assets/-1tgddd.jpg";
@@ -6,36 +7,64 @@ import "../App.css";
 import logo from "/assets/jslogo2.png";
 
 function NavBar() {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
-      <Link to="/" className="navbar-brand">
-        <img src={logo} alt="My Logo" width="150" height="150" />
-      </Link>
-      <button
-        className="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNavAltMarkup"
-        aria-controls="navbarNavAltMarkup"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span className="navbar-toggler-icon"></span>
-      </button>
-      <div
-        className="collapse navbar-collapse justify-content-end"
-        id="navbarNavAltMarkup"
-      >
-        <div className="navbar-nav">
-          <Link to="/" className="nav-item nav-link">
-            Home
-          </Link>
-          <Link to="/projects" className="nav-item nav-link">
-            My Work
-          </Link>
-          <Link to="/contact" className="nav-item nav-link">
-            Contact me
-          </Link>
+      <div className="container-fluid">
+        {" "}
+        {/* Ensures proper spacing */}
+        {/* Logo */}
+        <Link to="/" className="navbar-brand">
+          <img src={logo} alt="My Logo" width="150" height="150" />
+        </Link>
+        {/* Toggle Button (Mobile) */}
+        <button
+          className="navbar-toggler"
+          type="button"
+          onClick={() => setIsOpen(!isOpen)} // Toggle menu state
+          aria-controls="navbarNav"
+          aria-expanded={isOpen}
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        {/* Navbar Links (Right-Aligned) */}
+        <div
+          className={`collapse navbar-collapse justify-content-end ${
+            isOpen ? "show" : ""
+          }`}
+          id="navbarNav"
+        >
+          <ul className="navbar-nav">
+            <li className="nav-item">
+              <Link
+                to="/"
+                className="nav-link"
+                onClick={() => setIsOpen(false)}
+              >
+                Home
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link
+                to="/projects"
+                className="nav-link"
+                onClick={() => setIsOpen(false)}
+              >
+                My Work
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link
+                to="/contact"
+                className="nav-link"
+                onClick={() => setIsOpen(false)}
+              >
+                Contact me
+              </Link>
+            </li>
+          </ul>
         </div>
       </div>
     </nav>
