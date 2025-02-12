@@ -211,29 +211,14 @@ h4 {
   -webkit-text-fill-color: transparent;
 }
 
-/* Default state: grey lines */
-/* Default state: grey lines */
 .navbar-light .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg%20viewBox='0%200%2030%2030'%20xmlns='http://www.w3.org/2000/svg'%3E%3Cpath%20stroke='%238f9da8'%20stroke-linecap='round'%20stroke-miterlimit='10'%20stroke-width='2'%20d='M4%207h22M4%2015h22M4%2023h22'/%3E%3C/svg%3E") !important;
 }
 
-/* Hover/focus state: purple-blue lines */
 .navbar-light .navbar-toggler:hover .navbar-toggler-icon,
 .navbar-light .navbar-toggler:focus .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg%20viewBox='0%200%2030%2030'%20xmlns='http://www.w3.org/2000/svg'%3E%3Cpath%20stroke='%236a11cb'%20stroke-linecap='round'%20stroke-miterlimit='10'%20stroke-width='2'%20d='M4%207h22M4%2015h22M4%2023h22'/%3E%3C/svg%3E") !important;
 }
-
-/* .navbar-toggler:hover .navbar-toggler-icon,
-.navbar-toggler:focus .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23ff4500' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-} */
-/* .offcanvas-header {
-  background-color: none !important;
-}
-
-.offcanvas-body {
-  background-color: #ecf4d6;
-} */
 
 /* -contact page-------- */
 .contact-info p a {
