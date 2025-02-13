@@ -61,10 +61,6 @@ html {
   /* Add other styles as needed */
 }
 
-.homePage {
-  margin-top: 30px;
-}
-
 .my-jumbotron-bg {
   position: relative; /* Needed for absolute positioning of the pseudo-element */
   /* background-image: url("/coding.jpg"); */
@@ -172,15 +168,12 @@ h4 {
   color: #2d9596;
 }
 
-.projectsPage {
-  margin-top: 52px;
-}
-
 /* ---------navbar */
 
 .navbar {
   background-color: transparent !important;
   color: white;
+  margin-top: 5px;
 }
 
 .nav-link {

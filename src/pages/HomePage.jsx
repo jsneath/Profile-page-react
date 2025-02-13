@@ -5,12 +5,13 @@ import "../App.css";
 
 function HomePage() {
   return (
-    <div className="homePage">
-      <NavBar />
-      <Jumbotron />
-      <br />
-      <AutoplayCarousel />
-      {/* <div className="home-content">
+    <>
+      <div className="homePage">
+        <NavBar />
+        <Jumbotron />
+        <br />
+        <AutoplayCarousel />
+        {/* <div className="home-content">
         <p className="description">
           I'm a passionate Front-End Developer focused on React, building
           interactive, user-friendly web apps with HTML, CSS, and JavaScript. I
@@ -19,7 +20,8 @@ function HomePage() {
           contribute.
         </p>
       </div> */}
-    </div>
+      </div>
+    </>
   );
 }
 
