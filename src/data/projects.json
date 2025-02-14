@@ -1,5 +1,14 @@
 [
   {
+    "id": 7,
+    "title": "Endless Emporium",
+    "description": "A collaberative project in a front end course. This was a minimalist design with a lot of working concepts. We also had a time limit to get the project done so a few missing components to really finish it off",
+    "image": "/project7.png",
+    "link": "https://endless-emporium.netlify.app/",
+    "github": "https://github.com/Aleks-Ianu/Endless-Emporium"
+  },
+
+  {
     "id": 1,
     "title": "Foodie-Mate",
     "description": "App for finding local restaurants",

@@ -134,29 +134,116 @@ ol li::marker {
 
 /* Portfolio page styling----------------------------------- */
 
-#project-images {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
+/* Overall card styling with hover lift */
 .card {
   margin-top: 10px;
-  background-color: #9ad0c2;
+  background-color: transparent;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  border-color: white;
 }
 
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(#6a11cb, #2575fc);
+  border-color: transparent;
+
+  .list-group-item {
+    background: white;
+    border-color: white;
+    color: #265073;
+  }
+  .list-group-item:hover {
+    background: orange;
+    border-color: orange;
+    color: white;
+  }
+}
+
+/* Container for the image and overlay */
+.card-img-container {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Image scaling on hover */
+.card-img-container img {
+  transition: transform 0.3s ease;
+}
+
+.card-img-container:hover img {
+  transform: scale(1.1);
+}
+
+/* Overlay that appears on hover */
+.card-img-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(38, 80, 115, 0.6); /* Adjust color and opacity as desired */
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.card-img-container:hover .card-img-overlay {
+  opacity: 1;
+  border-radius: 1px;
+}
+
+/* Overlay text */
+.overlay-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Interactive button in the overlay */
+.overlay-button {
+  background: linear-gradient(45deg, #6a11cb, #2575fc);
+  border: none;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.overlay-button:hover {
+  background-color: #265073;
+}
+
+/* List group styling remains consistent */
 .list-group-item {
-  background-color: #9ad0c2;
-  border-color: #9ad0c2;
+  background: linear-gradient(45deg, #6a11cb, #2575fc);
+  color: #fff;
+  border-color: white;
+  text-decoration: none; /* ensure link text isn't underlined */
+  transition: background 0.3s ease;
 }
 
-.card-text {
+/* Hover effect for the whole item */
+.list-group-item:hover {
+  background: orange;
   color: #265073;
+  border-color: white;
+}
+
+/* Text color adjustments */
+.card-text,
+.project-description {
+  color: white;
 }
 
 .card-title,
-h5 {
-  color: #265073;
+h5,
+p {
+  color: white;
 }
 
 h4 {
@@ -164,8 +251,14 @@ h4 {
   padding: 25px;
 }
 
+/* Card link styling with hover effect */
 .card-link {
-  color: #2d9596;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.card-link:hover {
+  color: #265073;
 }
 
 /* ---------navbar */
