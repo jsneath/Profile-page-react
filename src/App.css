@@ -323,3 +323,9 @@ h2 {
   color: #2d9596;
   color: #265073;
 }
+
+@media (max-width: 767.98px) {
+  .display-4 {
+    margin-top: 2rem; /* or whatever spacing you like */
+  }
+}
