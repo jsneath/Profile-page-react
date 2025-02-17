@@ -28,6 +28,7 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  background: transparent;
 }
 
 h1 {
@@ -85,4 +86,13 @@ button:focus-visible {
 
 .carousel-container::-webkit-scrollbar {
   display: none; /* Hide the scrollbar */
+}
+
+.animated-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
 }
