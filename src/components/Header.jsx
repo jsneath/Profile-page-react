@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import myImage from "/assets/-1tgddd.jpg";
 import "../App.css";
 import logo from "/assets/jslogo2.png";
+import { useNavigate } from "react-router-dom";
 
 function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -72,6 +73,7 @@ function NavBar() {
 }
 
 function Jumbotron() {
+  const navigate = useNavigate();
   return (
     <div className="jumbotron jumbotron-fluid my-jumbotron-bg">
       <div className="container-fluid">
@@ -84,10 +86,14 @@ function Jumbotron() {
               className="profile-image img-fluid"
             />
             <div className="cta-buttons">
-              <button onClick={() => (window.location.href = "/projects")}>
+              <button onClick={() => navigate("/projects")}>
+                {" "}
+                {/* Updated */}
                 View My Work
               </button>
-              <button onClick={() => (window.location.href = "/contact")}>
+              <button onClick={() => navigate("/contact")}>
+                {" "}
+                {/* Updated */}
                 Let's Connect
               </button>
             </div>

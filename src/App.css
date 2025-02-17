@@ -74,6 +74,7 @@ html {
   gap: 1rem; /* space between buttons */
   justify-content: center;
   margin-top: 2rem; /* spacing from other elements */
+  color: white;
 }
 
 .cta-buttons button {

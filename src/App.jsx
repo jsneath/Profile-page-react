@@ -1,7 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { AnimatedBackground } from "animated-backgrounds";
-
 import HomePage from "./pages/HomePage";
 import ProjectsPage from "./pages/ProjectsPage";
 import ContactPage from "./pages/ContactPage";
