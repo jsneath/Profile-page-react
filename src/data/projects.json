@@ -2,7 +2,7 @@
   {
     "id": 7,
     "title": "Endless Emporium",
-    "description": "A collaberative project in a front end course. This was a minimalist design with a lot of working concepts. We also had a time limit to get the project done so a few missing components to really finish it off",
+    "description": "A collaberative project in a front end course. This was a minimalist design with a lot of working concepts. We also had a time limit to get the project done so a few missing components to really finish it off. Built with React, Node.js two API's and Tailwind ",
     "image": "/project7.png",
     "link": "https://endless-emporium.netlify.app/",
     "github": "https://github.com/Aleks-Ianu/Endless-Emporium"
@@ -11,7 +11,7 @@
   {
     "id": 1,
     "title": "Foodie-Mate",
-    "description": "App for finding local restaurants",
+    "description": "A collaberative project in a front end course. Welcome to Foodie-Mate, where culinary exploration meets personalized convenience! Built with Javascript, API integration and bootstrap",
     "image": "/project1.jpg",
     "link": "https://bakomans.github.io/restaurant-explorer-By-Group-8/",
     "github": "https://github.com/bakomans/restaurant-explorer-By-Group-8"
@@ -19,7 +19,7 @@
   {
     "id": 2,
     "title": "Weather Dashboard",
-    "description": "Providing the user with current and future weather forecasts",
+    "description": "interactive web application provides users with current and future weather forecasts. Designed for ease of use, it's perfect for planning your day with up-to-date weather information. Built with JS, JQuery, Weather API, Day.js and bootstrap",
     "image": "/project2.png",
     "link": "https://jsneath.github.io/Weather-dashboard/",
     "github": "https://github.com/jsneath/Weather-dashboard"
@@ -27,7 +27,7 @@
   {
     "id": 3,
     "title": "Work-day-Scheduler",
-    "description": "To help the user efficiently organize and plan their workday",
+    "description": "Welcome to the Work Day Scheduler project! This practical web application is designed to help users efficiently organize and plan their workday with an easy-to-use interface. Built with Javascript, Day.JS",
     "image": "/project3.png",
     "link": "https://jsneath.github.io/Work-Day-Scheduler/",
     "github": "https://github.com/jsneath/Work-Day-Scheduler"
@@ -35,7 +35,7 @@
   {
     "id": 4,
     "title": "Quiz game",
-    "description": "A quick fun easy quiz game",
+    "description": "Welcome to the Quiz Game project! This engaging web application provides a fun and interactive way to test your knowledge on various topics through timed quizzes. Built with Javascript",
     "image": "/project4.png",
     "link": "https://jsneath.github.io/code-quiz/",
     "github": "https://github.com/jsneath/code-quiz"
@@ -44,7 +44,7 @@
   {
     "id": 5,
     "title": "Early portfolio builder",
-    "description": "An early portfolio version playing with new tools",
+    "description": "Early days of buiding websites. My first mini portfolio. We all have to start somewhere :)",
     "image": "/project5.png",
     "link": "https://jsneath.github.io/Bootstrap-Portfolio/",
     "github": "https://github.com/jsneath/Bootstrap-Portfolio"
@@ -53,7 +53,7 @@
   {
     "id": 6,
     "title": "Project Management tool",
-    "description": "A tool for keeping your tasks organised and on track",
+    "description": "A tool for keeping your tasks organised and on track either by yourself or with a team. Built with React and Javascript",
     "image": "/project6.png",
     "link": "https://jsneath.github.io/project-management/",
     "github": "https://github.com/jsneath/project-management"
