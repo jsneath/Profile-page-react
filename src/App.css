@@ -111,8 +111,8 @@ html {
   font-size: 38px;
 }
 
-ol li::marker {
-  font-size: 20px;
+ul li::marker {
+  color: transparent;
 }
 
 .description {

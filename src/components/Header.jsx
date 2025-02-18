@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Link } from "react-router-dom";
-import myImage from "/assets/-1tgddd.jpg";
+import myImage from "/assets/profilepic.jpg";
 import "../App.css";
 import logo from "/assets/jslogo2.png";
 import { useNavigate } from "react-router-dom";
@@ -100,17 +100,17 @@ function Jumbotron() {
           </div>
           {/* Text on the right */}
           <div className="col-md-6 display-4">
-            <ol>
+            <ul>
               <li>
-                <p>{"<Hi, I'm James!>"}</p>
+                <p>Hi, I'm James!</p>
               </li>
               <li>
-                <p>{"<I'm a Front-End Web Developer>"}</p>
+                <p>I'm a Front-End Web Developer</p>
               </li>
               <li>
-                <p>{"<Open for work in London, UK 📍>"}</p>
+                <p>Open for work in London, UK 📍</p>
               </li>
-            </ol>
+            </ul>
 
             <div className="home-content">
               <p className="description">
