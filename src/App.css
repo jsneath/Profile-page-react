@@ -15,6 +15,14 @@ html {
   padding: 15px 15px;
 }
 
+h2 {
+  color: #ffb703;
+}
+
+h3 {
+  color: #ffb703;
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -156,8 +164,8 @@ ul li::marker {
     color: #265073;
   }
   .list-group-item:hover {
-    background: orange;
-    border-color: orange;
+    background: #ffb703;
+    border-color: #ffb703;
     color: white;
   }
 }
@@ -309,12 +317,25 @@ h4 {
 
 /* -contact page-------- */
 .contact-info p a {
-  color: #2d9596;
+  color: white;
 }
 
-.contact-info p,
-h2 {
-  color: #265073;
+.contact-info {
+  background-image: url("path-to-your-image.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* This keeps the background fixed while scrolling */
+  padding: 50px 20px; /* Padding for content visibility */
+  color: white; /* To ensure text is readable against the background */
+}
+
+.contact-info a {
+  transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+  color: #ffb703; /* Example color, change as needed */
+  text-shadow: 0 0 10px rgba(255, 87, 34, 0.6);
 }
 
 .test {
@@ -322,6 +343,14 @@ h2 {
   color: #9ad0c2;
   color: #2d9596;
   color: #265073;
+}
+
+.social-icon {
+  transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
 }
 
 @media (max-width: 767.98px) {

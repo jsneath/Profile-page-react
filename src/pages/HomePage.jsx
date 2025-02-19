@@ -10,6 +10,7 @@ function HomePage() {
         <NavBar />
         <Jumbotron />
         <br />
+        <h3>My Tech Stack</h3>
         <AutoplayCarousel />
         {/* <div className="home-content">
         <p className="description">
