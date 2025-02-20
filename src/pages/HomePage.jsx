@@ -1,9 +1,11 @@
+import React, { useState } from "react";
 import NavBar, { Jumbotron } from "../components/Header"; // Adjust the path according to your project structure
 import AutoplayCarousel from "../components/AutoplayCarousel";
-
+import SpaceDodgeGame from "../components/SpaceDodgeGame";
 import "../App.css";
 
 function HomePage() {
+  const [showGame, setShowGame] = useState(false);
   return (
     <>
       <div className="homePage">
@@ -22,6 +24,25 @@ function HomePage() {
         </p>
       </div> */}
       </div>
+      {/* Game Toggle Button */}
+      <div style={{ textAlign: "center", margin: "20px 0" }}>
+        <button
+          onClick={() => setShowGame(!showGame)}
+          style={{
+            padding: "10px 20px",
+            background: "#ffb703",
+            color: "#1a1a2e",
+            border: "none",
+            borderRadius: "5px",
+            cursor: "pointer",
+          }}
+        >
+          {showGame ? "Hide Game" : "Play Space Dodge!"}
+        </button>
+      </div>
+
+      {/* Game Component */}
+      {showGame && <SpaceDodgeGame />}
     </>
   );
 }
