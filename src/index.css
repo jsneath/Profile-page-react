@@ -101,45 +101,36 @@ button:focus-visible {
 .game-container {
   position: relative;
   width: 100%;
-  max-width: 600px;
-  margin: 20px auto;
-  text-align: center;
+  height: 110vh;
+  background: #000;
   color: #fff;
+  overflow: hidden;
+}
+
+.start-screen {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.start-screen button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background: #000;
+  color: #fff;
+  border: 1px solid #fff;
+  cursor: pointer;
 }
 
 .game-area {
   position: relative;
   width: 100%;
-  height: 400px;
+  height: 100vh; /* Make it full viewport height to prevent cutting off */
   background: linear-gradient(180deg, #1a1a2e, #16213e);
   border: 2px solid #ffb703;
-  overflow: hidden;
-}
-
-.spaceship {
-  position: absolute;
-  bottom: 10px;
-  width: 40px;
-  height: 40px;
-  background: url("/spaceship.png") no-repeat center;
-  background-size: contain;
-  transition: left 0.1s ease;
-}
-
-.asteroid {
-  position: absolute;
-  background: radial-gradient(circle, #ff6b6b, #4ecdc4);
-  border-radius: 50%;
-  animation: spin 2s infinite linear;
-}
-
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  overflow: visible; /* Ensure content isn't clipped */
 }
 
 .game-over {
@@ -149,19 +140,32 @@ button:focus-visible {
   transform: translate(-50%, -50%);
   background: rgba(0, 0, 0, 0.8);
   padding: 20px;
-  border-radius: 10px;
+  text-align: center;
 }
 
 .game-over button {
-  background: #ffb703;
-  color: #1a1a2e;
   padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
+  font-size: 16px;
+  background: #000;
+  color: #fff;
+  border: 1px solid #fff;
   cursor: pointer;
-  transition: transform 0.2s ease;
 }
 
-.game-over button:hover {
-  transform: scale(1.1);
+.spaceship {
+  position: absolute;
+  bottom: 10px; /* Positions it near the bottom of the game area */
+  width: 50px; /* Adjust based on your image size */
+  height: 50px;
+  padding-bottom: 200px;
+  background: url("/public/spaceship.png") no-repeat center;
+  background-size: contain;
+}
+
+.asteroid {
+  position: absolute;
+  width: 30px; /* Adjust based on your image size */
+  height: 30px;
+  background: url("/asteroid.png") no-repeat center;
+  background-size: contain;
 }

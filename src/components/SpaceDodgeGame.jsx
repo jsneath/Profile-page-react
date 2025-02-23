@@ -1,13 +1,14 @@
-import React, { useState, useEffect } from "react";
-import "../index.css";
+import React, { useState, useEffect, useRef } from "react";
+import "../index.css"; // Ensure this points to your CSS file
 
 const SpaceDodgeGame = () => {
-  const [shipPosition, setShipPosition] = useState(50); // Ship starts in the middle (percentage)
+  const [shipPosition, setShipPosition] = useState(50);
   const [asteroids, setAsteroids] = useState([]);
   const [score, setScore] = useState(0);
   const [gameOver, setGameOver] = useState(false);
-  const [gameStarted, setGameStarted] = useState(false); // Track if game has started
-  const [timeLeft, setTimeLeft] = useState(600); // 10 minutes timer in seconds
+  const [gameStarted, setGameStarted] = useState(false);
+  const [timeLeft, setTimeLeft] = useState(600);
+  const gameAreaRef = useRef(null); // Added ref for scrolling to game area
 
   // Handle ship movement with arrow keys
   const handleKeyDown = (e) => {
@@ -19,7 +20,7 @@ const SpaceDodgeGame = () => {
     }
   };
 
-  // Generate new asteroids with size in percentage
+  // Generate new asteroids
   const spawnAsteroid = () => {
     const size = Math.random() * 4 + 3; // Size between 3% and 7% of game area height
     const position = Math.random() * 90; // Random horizontal position (0% to 90%)
@@ -31,56 +32,64 @@ const SpaceDodgeGame = () => {
     };
   };
 
-  // Start the game (initialize asteroids and timer)
+  // Start the game and scroll to game area
   const startGame = () => {
     setGameStarted(true);
-    setAsteroids([]); // Start with no asteroids
+    setAsteroids([]);
     setScore(0);
     setGameOver(false);
-    setTimeLeft(600); // Reset timer to 10 minutes
+    setTimeLeft(600);
     setShipPosition(50);
+    // Scroll to game area to ensure visibility
+    if (gameAreaRef.current) {
+      gameAreaRef.current.scrollIntoView({ behavior: "smooth" });
+    }
   };
 
-  // Game loop for asteroids and score
+  // Game loop
   useEffect(() => {
     if (!gameStarted || gameOver) return;
 
     const gameLoop = setInterval(() => {
       setAsteroids((prev) => {
-        // Calculate elapsed time in seconds (600 - timeLeft)
         const elapsedTime = 600 - timeLeft;
-        // Increase difficulty: base speed 3.0, plus 0.01 per second elapsed (max 9.0 at 10 min)
         const asteroidSpeed = Math.min(3.0 + elapsedTime * 0.01, 9.0);
-        // Increase spawn rate: base 0.15, plus 0.0005 per second (max 0.45 at 10 min)
         const spawnRate = Math.min(0.15 + elapsedTime * 0.0005, 0.45);
 
         const newAsteroids = prev
           .map((a) => ({
             ...a,
-            top: a.top + asteroidSpeed, // Speed increases over time
+            top: a.top + asteroidSpeed,
           }))
-          .filter((a) => a.top < 120); // Allow asteroids to move off-screen
+          .filter((a) => a.top < 120);
 
-        // Spawn asteroids with increasing frequency
         if (Math.random() < spawnRate) {
           newAsteroids.push(spawnAsteroid());
-          // 50% chance to spawn a second asteroid
           if (Math.random() < 0.5) {
             newAsteroids.push(spawnAsteroid());
           }
         }
 
-        // Check collision with consistent percentage units
-        const shipBottom = 90; // Spaceship top at 90%
-        const shipLeft = shipPosition - 5;
-        const shipRight = shipPosition + 5;
+        // Define ship dimensions for collision detection (in %)
+        const shipWidth = 5; // Adjust based on actual spaceship width
+        const shipHeight = 12.5; // Adjust based on actual spaceship height
+        const shipTop = 85; // Spaceship top position (adjusted for visibility)
+        const shipBottom = shipTop + shipHeight; // 97.5%
+        const shipLeft = shipPosition - shipWidth / 2; // Assuming shipPosition is center
+        const shipRight = shipPosition + shipWidth / 2;
 
+        // Collision detection
         newAsteroids.forEach((a) => {
+          const asteroidBottom = a.top + a.size;
+          const asteroidTop = a.top;
+          const asteroidLeft = a.left;
+          const asteroidRight = a.left + a.size;
+
           if (
-            a.top + a.size > shipBottom && // Asteroid bottom passes ship's top
-            a.top < 100 && // Asteroid top hasn't passed bottom
-            a.left + a.size / 2 > shipLeft && // Asteroid center overlaps ship horizontally
-            a.left + a.size / 2 < shipRight
+            asteroidBottom > shipTop && // Asteroid bottom is below ship's top
+            asteroidTop < shipBottom && // Asteroid top is above ship's bottom
+            asteroidRight > shipLeft && // Asteroid right is past ship's left
+            asteroidLeft < shipRight // Asteroid left is before ship's right
           ) {
             setGameOver(true);
           }
@@ -88,11 +97,9 @@ const SpaceDodgeGame = () => {
 
         return newAsteroids;
       });
-      // Increase score gradually (1 point per second)
-      setScore((prev) => prev + 0.1); // 0.1 per 100ms = 1 point/second
-    }, 100); // 100ms interval
+      setScore((prev) => prev + 0.1);
+    }, 100);
 
-    // Timer for 10-minute duration
     const timer = setInterval(() => {
       setTimeLeft((prev) => {
         if (prev <= 1 && !gameOver) {
@@ -101,7 +108,7 @@ const SpaceDodgeGame = () => {
         }
         return prev - 1;
       });
-    }, 1000); // Update every second
+    }, 1000);
 
     window.addEventListener("keydown", handleKeyDown);
     return () => {
@@ -109,11 +116,11 @@ const SpaceDodgeGame = () => {
       clearInterval(timer);
       window.removeEventListener("keydown", handleKeyDown);
     };
-  }, [gameOver, shipPosition, gameStarted, timeLeft]); // Added timeLeft as dependency
+  }, [gameOver, shipPosition, gameStarted, timeLeft]);
 
   const restartGame = () => {
     setGameStarted(false);
-    setTimeout(() => startGame(), 100); // Small delay to reset state
+    setTimeout(() => startGame(), 100);
   };
 
   return (
@@ -129,7 +136,7 @@ const SpaceDodgeGame = () => {
             Space Dodge - Score: {Math.floor(score)} | Time Left:{" "}
             {Math.floor(timeLeft / 60)}m {timeLeft % 60}s
           </h3>
-          <div className="game-area">
+          <div className="game-area" ref={gameAreaRef}>
             {asteroids.map((asteroid) => (
               <div
                 key={asteroid.id}
@@ -139,10 +146,17 @@ const SpaceDodgeGame = () => {
                   left: `${asteroid.left}%`,
                   width: `${asteroid.size}%`,
                   height: `${asteroid.size}%`,
+                  position: "absolute",
                 }}
               />
             ))}
-            <div className="spaceship" style={{ left: `${shipPosition}%` }} />
+            <div
+              className="spaceship"
+              style={{
+                left: `${shipPosition}%`,
+                position: "absolute",
+              }}
+            />
           </div>
           {gameOver && (
             <div className="game-over">

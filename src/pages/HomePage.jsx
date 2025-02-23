@@ -1,11 +1,20 @@
-import React, { useState } from "react";
-import NavBar, { Jumbotron } from "../components/Header"; // Adjust the path according to your project structure
+import React, { useState, useRef, useEffect } from "react";
+import NavBar, { Jumbotron } from "../components/Header";
 import AutoplayCarousel from "../components/AutoplayCarousel";
 import SpaceDodgeGame from "../components/SpaceDodgeGame";
 import "../App.css";
 
 function HomePage() {
   const [showGame, setShowGame] = useState(false);
+  const gameRef = useRef(null);
+
+  // Scroll to game container when showGame becomes true
+  useEffect(() => {
+    if (showGame && gameRef.current) {
+      gameRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  }, [showGame]);
+
   return (
     <>
       <div className="homePage">
@@ -14,15 +23,6 @@ function HomePage() {
         <br />
         <h3>My Tech Stack</h3>
         <AutoplayCarousel />
-        {/* <div className="home-content">
-        <p className="description">
-          I'm a passionate Front-End Developer focused on React, building
-          interactive, user-friendly web apps with HTML, CSS, and JavaScript. I
-          create responsive interfaces that enhance user experiences and thrive
-          in dynamic, innovative teams where I can continuously learn and
-          contribute.
-        </p>
-      </div> */}
       </div>
       {/* Game Toggle Button */}
       <div style={{ textAlign: "center", margin: "20px 0" }}>
@@ -41,8 +41,12 @@ function HomePage() {
         </button>
       </div>
 
-      {/* Game Component */}
-      {showGame && <SpaceDodgeGame />}
+      {/* Game Component with Ref */}
+      {showGame && (
+        <div ref={gameRef}>
+          <SpaceDodgeGame />
+        </div>
+      )}
     </>
   );
 }
