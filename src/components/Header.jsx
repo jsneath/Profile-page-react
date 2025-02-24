@@ -102,23 +102,28 @@ function Jumbotron() {
           <div className="col-md-6 display-4">
             <ul>
               <li>
-                <p>Hi, I'm James!</p>
+                <p>James Sneath</p>
               </li>
-              <li>
+              {/* <li>
                 <p>I'm a Front-End Web Developer</p>
-              </li>
+              </li> */}
               <li>
-                <p>Open for work in London, UK 📍</p>
+                <p>Front-End Developer | London, UK</p>
               </li>
             </ul>
 
             <div className="home-content">
               <p className="description">
-                I'm a passionate Front-End Developer focused on React, building
-                interactive, user-friendly web apps with HTML, CSS, and
-                JavaScript. I create responsive interfaces that enhance user
-                experiences and thrive in dynamic, innovative teams where I can
-                continuously learn and contribute.
+                Hi, I’m James, a UK-based front-end developer who thrives on
+                turning creative ideas into seamless, pixel-perfect web
+                experiences. With a passion for clean code and tools like React
+                and Tailwind CSS, I build interfaces that blend functionality
+                with flair. My journey in tech kicked off with a love for
+                problem-solving, and now I’m all about crafting digital
+                solutions that make an impact. When I’m not coding, you’ll find
+                me exploring design inspiration or lost in a good book. Curious
+                about my work? Please check out my project page! Oh, and have a
+                go at the game below. Let me know what score you get!
               </p>
             </div>
           </div>
