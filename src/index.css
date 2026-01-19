@@ -169,3 +169,35 @@ button:focus-visible {
   background: url("/asteroid.png") no-repeat center;
   background-size: contain;
 }
+
+.spaceship.hidden {
+  opacity: 0;
+}
+
+.explosion {
+  width: 80px;
+  height: 80px;
+  transform: translateX(-50%);
+  background: radial-gradient(circle, #ff6b00 0%, #ff4500 30%, #ff0000 60%, transparent 70%);
+  border-radius: 50%;
+  animation: explode 0.6s ease-out forwards;
+  box-shadow:
+    0 0 20px #ff6b00,
+    0 0 40px #ff4500,
+    0 0 60px #ff0000;
+}
+
+@keyframes explode {
+  0% {
+    transform: translateX(-50%) scale(0.5);
+    opacity: 1;
+  }
+  50% {
+    transform: translateX(-50%) scale(1.5);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateX(-50%) scale(2);
+    opacity: 0;
+  }
+}
