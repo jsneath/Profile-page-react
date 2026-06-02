@@ -1,9 +1,37 @@
 [
   {
+    "id": 10,
+    "title": "Premier League Prediction App",
+    "description": "A full-stack MERN app where users predict Premier League scorelines and compete on a leaderboard. Features secure JWT authentication, password hashing, rate limiting and input validation, plus scheduled cron jobs that pull live fixtures and email users their results. Built with React, React Router, Express, MongoDB (Mongoose) and Nodemailer.",
+    "image": "/project10.jpg",
+    "tech": ["React", "Express", "MongoDB", "JWT Auth", "Node.js", "Nodemailer"],
+    "link": "https://premier-league-prediction-app.vercel.app",
+    "github": "https://github.com/jsneath/premier-league-prediction-app"
+  },
+  {
+    "id": 9,
+    "title": "Habit Tracker",
+    "description": "A modern habit-tracking web app for building daily routines and visualising streaks and progress over time. Fully typed and unit-tested, with cloud sync and authentication via Supabase. Built with Next.js, TypeScript, Tailwind CSS, Radix UI, Zustand, React Hook Form, Zod, Recharts and Vitest.",
+    "image": "/project9.jpg",
+    "tech": ["Next.js", "TypeScript", "Supabase", "Tailwind", "Zustand", "Vitest"],
+    "link": "https://habit-tracker-coral-eta.vercel.app",
+    "github": "https://github.com/jsneath/habit-tracker"
+  },
+  {
+    "id": 8,
+    "title": "GainForge — Fitness PWA",
+    "description": "An offline-first Progressive Web App for planning workouts and tracking progress, installable on mobile and fully usable without a connection. Data is stored locally in IndexedDB and progress is visualised with interactive charts. Built with React, Vite, Tailwind CSS, Dexie, Framer Motion and Recharts.",
+    "image": "/project8.jpg",
+    "tech": ["React", "Vite", "PWA", "IndexedDB", "Tailwind", "Recharts"],
+    "link": "https://fitness-pwa.netlify.app/",
+    "github": "https://github.com/jsneath/fitness-pwa"
+  },
+  {
     "id": 7,
     "title": "Endless Emporium",
-    "description": "A collaberative project in a front end course. This was a minimalist design with a lot of working concepts. We also had a time limit to get the project done so a few missing components to really finish it off. Built with React, Node.js two API's and Tailwind ",
+    "description": "A collaborative project in a front-end course. This was a minimalist design with a lot of working concepts. We also had a time limit to get the project done, so there are a few missing components to really finish it off. Built with React, Node.js, two APIs and Tailwind.",
     "image": "/project7.png",
+    "tech": ["React", "Node.js", "Tailwind", "REST APIs"],
     "link": "https://endless-emporium.netlify.app/",
     "github": "https://github.com/Aleks-Ianu/Endless-Emporium"
   },
@@ -11,32 +39,36 @@
   {
     "id": 1,
     "title": "Foodie-Mate",
-    "description": "A collaberative project in a front end course. Welcome to Foodie-Mate, where culinary exploration meets personalized convenience! Built with Javascript, API integration and bootstrap",
+    "description": "A collaborative project in a front-end course. Welcome to Foodie-Mate, where culinary exploration meets personalized convenience! Built with JavaScript, API integration and Bootstrap.",
     "image": "/project1.jpg",
+    "tech": ["JavaScript", "REST APIs", "Bootstrap"],
     "link": "https://bakomans.github.io/restaurant-explorer-By-Group-8/",
     "github": "https://github.com/bakomans/restaurant-explorer-By-Group-8"
   },
   {
     "id": 2,
     "title": "Weather Dashboard",
-    "description": "interactive web application provides users with current and future weather forecasts. Designed for ease of use, it's perfect for planning your day with up-to-date weather information. Built with JS, JQuery, Weather API, Day.js and bootstrap",
+    "description": "An interactive web application that provides users with current and future weather forecasts. Designed for ease of use, it's perfect for planning your day with up-to-date weather information. Built with JavaScript, jQuery, a Weather API, Day.js and Bootstrap.",
     "image": "/project2.png",
+    "tech": ["JavaScript", "jQuery", "Weather API", "Day.js", "Bootstrap"],
     "link": "https://jsneath.github.io/Weather-dashboard/",
     "github": "https://github.com/jsneath/Weather-dashboard"
   },
   {
     "id": 3,
     "title": "Work-day-Scheduler",
-    "description": "Welcome to the Work Day Scheduler project! This practical web application is designed to help users efficiently organize and plan their workday with an easy-to-use interface. Built with Javascript, Day.JS",
+    "description": "Welcome to the Work Day Scheduler project! This practical web application is designed to help users efficiently organize and plan their workday with an easy-to-use interface. Built with JavaScript and Day.js.",
     "image": "/project3.png",
+    "tech": ["JavaScript", "Day.js", "Bootstrap"],
     "link": "https://jsneath.github.io/Work-Day-Scheduler/",
     "github": "https://github.com/jsneath/Work-Day-Scheduler"
   },
   {
     "id": 4,
     "title": "Quiz game",
-    "description": "Welcome to the Quiz Game project! This engaging web application provides a fun and interactive way to test your knowledge on various topics through timed quizzes. Built with Javascript",
+    "description": "Welcome to the Quiz Game project! This engaging web application provides a fun and interactive way to test your knowledge on various topics through timed quizzes. Built with JavaScript.",
     "image": "/project4.png",
+    "tech": ["JavaScript", "HTML", "CSS"],
     "link": "https://jsneath.github.io/code-quiz/",
     "github": "https://github.com/jsneath/code-quiz"
   },
@@ -44,8 +76,9 @@
   {
     "id": 5,
     "title": "Early portfolio builder",
-    "description": "Early days of buiding websites. My first mini portfolio. We all have to start somewhere :)",
+    "description": "Early days of building websites. My first mini portfolio. We all have to start somewhere :)",
     "image": "/project5.png",
+    "tech": ["HTML", "CSS", "Bootstrap"],
     "link": "https://jsneath.github.io/Bootstrap-Portfolio/",
     "github": "https://github.com/jsneath/Bootstrap-Portfolio"
   },
@@ -53,8 +86,9 @@
   {
     "id": 6,
     "title": "Project Management tool",
-    "description": "A tool for keeping your tasks organised and on track either by yourself or with a team. Built with React and Javascript",
+    "description": "A tool for keeping your tasks organised and on track either by yourself or with a team. Built with React and JavaScript.",
     "image": "/project6.png",
+    "tech": ["React", "JavaScript"],
     "link": "https://jsneath.github.io/project-management/",
     "github": "https://github.com/jsneath/project-management"
   }

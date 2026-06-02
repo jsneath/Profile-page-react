@@ -243,6 +243,25 @@ ul li::marker {
   border-color: white;
 }
 
+/* Tech stack pills on each project card */
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+}
+
+.tech-pill {
+  font-size: 0.75rem;
+  line-height: 1;
+  padding: 0.3rem 0.6rem;
+  border: 1px solid #ffb703;
+  border-radius: 20px;
+  color: #ffb703;
+  white-space: nowrap;
+}
+
 /* Text color adjustments */
 .card-text,
 .project-description {

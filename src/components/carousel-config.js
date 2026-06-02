@@ -3,48 +3,48 @@ import { faHourglass1 } from "@fortawesome/free-solid-svg-icons";
 export const cardDetails = {
   0: {
     imgUrl: "/assets/html.svg",
-    title: "Text 1",
+    title: "HTML",
   },
 
   1: {
-    imgUrl: "./assets/css.svg",
-    title: "Text 2",
+    imgUrl: "/assets/css.svg",
+    title: "CSS",
   },
 
   2: {
     imgUrl: "/assets/js.svg",
-    title: "Text 3",
+    title: "JavaScript",
   },
 
   3: {
     imgUrl: "/assets/react.svg",
-    title: "Text 4",
+    title: "React",
   },
 
   4: {
     imgUrl: "/assets/ruby.svg",
-    title: "Text 5",
+    title: "Ruby",
   },
 
   5: {
     imgUrl: "/assets/next.svg",
-    title: "Text 6",
+    title: "Next.js",
   },
 
   6: {
     imgUrl: "/assets/node.svg",
-    title: "Text 7",
+    title: "Node.js",
   },
   7: {
     imgUrl: "/assets/tailwind.svg",
-    title: "Text 8",
+    title: "Tailwind CSS",
   },
   8: {
     imgUrl: "/assets/github.svg",
-    title: "Text 9",
+    title: "GitHub",
   },
   9: {
     imgUrl: "/assets/figma.svg",
-    title: "Text 10",
+    title: "Figma",
   },
 };

@@ -25,6 +25,15 @@ function ProjectCard({ project }) {
         </div>
       </div>
       <Card.Body className="d-flex flex-column">
+        {project.tech && (
+          <div className="tech-tags">
+            {project.tech.map((tech) => (
+              <span key={tech} className="tech-pill">
+                {tech}
+              </span>
+            ))}
+          </div>
+        )}
         {showDetails && (
           <Card.Text className="project-description">
             {project.description}
@@ -32,16 +41,18 @@ function ProjectCard({ project }) {
         )}
       </Card.Body>
       <ListGroup variant="flush">
-        <ListGroup.Item
-          as="a"
-          action
-          href={project.link}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-center"
-        >
-          Website
-        </ListGroup.Item>
+        {project.link && (
+          <ListGroup.Item
+            as="a"
+            action
+            href={project.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-center"
+          >
+            Website
+          </ListGroup.Item>
+        )}
         <ListGroup.Item
           as="a"
           action

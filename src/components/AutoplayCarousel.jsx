@@ -12,7 +12,7 @@ export default function AutoplayCarousel() {
             <CarouselItem
               key={`first_${detailKey}`}
               imgUrl={cardDetails[detailKey].imgUrl}
-              imgTitle={cardDetails[detailKey].title}
+              title={cardDetails[detailKey].title}
             ></CarouselItem>
           );
         })}
@@ -21,7 +21,7 @@ export default function AutoplayCarousel() {
             <CarouselItem
               key={`second_${detailKey}`}
               imgUrl={cardDetails[detailKey].imgUrl}
-              imgTitle={cardDetails[detailKey].title}
+              title={cardDetails[detailKey].title}
             ></CarouselItem>
           );
         })}
