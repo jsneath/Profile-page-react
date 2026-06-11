@@ -1,5 +1,13 @@
 [
   {
+    "id": 11,
+    "title": "CryptoForge",
+    "description": "A local-first UK crypto portfolio and Capital Gains Tax tracker. It builds HMRC Section 104 pools from your full transaction history to calculate cost basis, realised gains and estimated CGT (including the Annual Exempt Amount), with downloadable tax reports and a 'what-if' disposal simulator. All data stays in the browser (IndexedDB) and money maths uses decimal.js for accuracy. Built with Next.js, TypeScript and Tailwind CSS, with a Vitest test suite.",
+    "image": "/project11.jpg",
+    "tech": ["Next.js", "TypeScript", "Tailwind", "IndexedDB", "Recharts", "Vitest"],
+    "github": "https://github.com/jsneath/uk-cryptoforge"
+  },
+  {
     "id": 10,
     "title": "Premier League Prediction App",
     "description": "A full-stack MERN app where users predict Premier League scorelines and compete on a leaderboard. Features secure JWT authentication, password hashing, rate limiting and input validation, plus scheduled cron jobs that pull live fixtures and email users their results. Built with React, React Router, Express, MongoDB (Mongoose) and Nodemailer.",

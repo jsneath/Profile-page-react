@@ -53,16 +53,18 @@ function ProjectCard({ project }) {
             Website
           </ListGroup.Item>
         )}
-        <ListGroup.Item
-          as="a"
-          action
-          href={project.github}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-center"
-        >
-          GitHub
-        </ListGroup.Item>
+        {project.github && (
+          <ListGroup.Item
+            as="a"
+            action
+            href={project.github}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-center"
+          >
+            GitHub
+          </ListGroup.Item>
+        )}
       </ListGroup>
     </Card>
   );
